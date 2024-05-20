@@ -1,0 +1,101 @@
+
+.hamburgerMenu {
+    display: none; 
+    position: relative; 
+    width: 100%; 
+  }
+  
+  .menuToggle {
+    cursor: pointer;
+    position: absolute; 
+    right: 25px; 
+    top: 30px; 
+    z-index: 2; 
+  }
+  
+  .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+  }
+  
+  .open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  .menu {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    background: linear-gradient(to right, #121633, #555bc8); 
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+    padding: 20px;
+    display: none;
+    transition: all 0.5s ease;
+  }
+  .menu li {
+    display: flex;
+    align-items: center; 
+    padding: 5px 0;
+    justify-content: flex-end;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center; 
+  }
+  
+  .menu li a i { 
+    margin-left: 10px;
+    color: inherit; 
+  }
+  
+  .menu li:nth-last-child(2) {
+    border-bottom: 2px solid #ffffff; 
+    padding-bottom: 15px; 
+  }
+  
+  .menu li:last-child {
+    padding-top: 15px; 
+  }
+  
+  .show {
+    display: block; 
+    animation: slideDown 0.5s ease forwards;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hamburgerMenu {
+      display: block;
+    }
+  }
+  

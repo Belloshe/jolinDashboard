@@ -1,0 +1,129 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .title {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 12px;
+  }
+  
+  .legendItem {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .legendCircle {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    top: 475px;
+    left: 996px;
+    gap: 0px;
+    opacity: 0px;
+    margin-right: 5px;
+  }
+  
+  .select {
+    margin-right: 10px; 
+    width: 118px;
+height: 27px;
+gap: 0px;
+border-radius: 5px 5px 5px 5px;
+border: 1px 1px 1px 1px;
+opacity: 0px;
+    border: 1px solid #ccc;
+
+  }
+  
+  @media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title, .select {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .legend {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+  .chart-x-axis-label {
+    font-size: 10px;
+    transform: rotate(-45deg); 
+    transform-origin: right top; 
+    max-width: 60px; 
+}
+    .title {
+        font-size: 16px;
+    }
+
+    .legendItem {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    .select {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+  .chart-x-axis-label {
+    font-size: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; 
+}
+    .title {
+        font-size: 14px;
+    }
+
+    .legendItem {
+        font-size: 9px; 
+    }
+
+    .legend {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 360px) {
+    .legendItem {
+        display: block; 
+        margin-bottom: 5px;
+    }
+
+    .legendItem span {
+        display: block;
+        transform: rotate(-45deg);
+        transform-origin: left top;
+        font-size: 8px;
+    }
+}

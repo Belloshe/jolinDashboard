@@ -1,0 +1,33 @@
+
+.container {
+  display: flex;
+  flex-direction: row; 
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+.title {
+  position: relative;
+  font-size: 30px;
+  top: 35px;
+  margin-left: 25px;
+
+}
+.mainContent {
+  flex-grow: 1; 
+  overflow-y: auto; 
+  background-color:  #d4dde7f1;
+
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+ display: none;
+  }
+
+  .mainContent {
+    width: 100%; 
+  }
+}

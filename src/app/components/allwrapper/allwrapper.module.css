@@ -1,0 +1,104 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .wrapperContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 auto;
+    min-width: 250px; 
+    min-height: 200px;
+  }
+  
+  .scoreNavigator {
+    flex: 1 1 60%; 
+    margin-right: 10px; 
+    margin-bottom: 20px; 
+  }
+  
+  .weeklyInclusion {
+    flex: 1 1 35%;
+    margin-bottom: 20px;
+  }
+  
+  .newhire {
+    flex: 1 1 50%; 
+    margin-right: 10px; 
+  }
+  
+  .difference {
+    flex: 1 3 40%;
+  }
+  
+  
+  .horizontalContainer {
+    display: flex;
+    width: 100%;
+    gap: 1px; 
+  }
+  
+  .trends {
+    margin-top: 20px;
+    flex: 1; 
+  }
+  
+  .verticalStack {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .box {
+      flex-basis: 100%; 
+    }
+    
+    .scoreNavigator, .newhire {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrapperContainer {
+      margin-top: 50px;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 1024px) {
+    .horizontalContainer {
+      flex-direction: column;
+    }
+  
+    .trends, .risk, .oppts {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .horizontalContainer, .verticalStack {
+      flex-direction: column; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .trends, .risk, .oppts {
+      padding: 10px;
+    }
+  }
+  

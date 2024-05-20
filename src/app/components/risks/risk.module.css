@@ -1,0 +1,86 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .box {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100px;
+    width: 20px;
+  }
+  
+  .riskItem {
+    flex: 1; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    min-width: 200px; 
+    font-size: 12px;
+  }
+  
+  .riskItem:last-child {
+    margin-right: 0; 
+  }
+  
+  .riskItem h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .riskItem p {
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .title {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .box {
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+      width: 100%; 
+    }
+  
+    .riskItem {
+      flex: 0 0 48%; 
+      margin-right: 4%; 
+      margin-bottom: 20px; 
+      padding: 15px;
+    }
+  
+    .riskItem:nth-child(2n) {
+      margin-right: 0; 
+    }
+  
+    .riskItem:last-child {
+      margin-right: 0; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 20px; 
+    }
+  
+    .box {
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+    }
+  
+    .riskItem {
+      flex: 0 0 100%; 
+      margin-right: 0;
+      margin-bottom: 10px;
+      padding: 10px; 
+    }
+  }

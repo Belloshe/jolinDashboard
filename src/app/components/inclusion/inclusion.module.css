@@ -1,0 +1,205 @@
+.wrapper {
+    display: flex;
+    
+  }
+
+  .leftContent {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 200px; 
+  }
+  
+  .middleContent {
+    flex-grow: 1;
+    text-align: center;
+   margin-top: 40px;
+  }
+  
+  .rightContent {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 200px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+  }
+  
+  .firstTitle {
+    margin-left: 250px; 
+    margin-top: 40px;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.52px;
+    text-align: left; 
+  }
+  .leftTitle {
+    margin-top: -30px; 
+font-size: 25px;
+  }
+  .scores {
+    font-size: 40px;
+    margin-top: 50px; 
+    font-weight: bold;
+    margin-left: 70px;
+  }
+  .teamSelect {
+    width: 118px;
+    height: 27px;
+    gap: 0px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px 1px 1px 1px;
+    opacity: 0px;
+    border: 1px solid #ccc;
+  }
+  .progressBarContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+    .legendList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0; 
+        margin: -40px 0 0 110px; 
+          
+      }
+.progressBarContainer {
+    width: 100%;     
+    background-color: #eee;  
+    height: 31px;
+    border-radius: 5px; 
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.progressBar {
+    background-color: green; 
+    transition: width 0.3s ease-in-out;
+    width: 187px;
+height: 31px;
+gap: 0px;
+border-radius: 5px 5px 5px 5px;
+opacity: 0px;
+
+}
+
+  .legendItem {
+    font-size: 12px;
+    color: inherit; 
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+  }
+  
+  .legendColor {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+ .iconAndText {
+  align-items: center; 
+  margin-top: 50px; 
+
+}
+.arrowIcon, .textWithPadding {
+    margin-right: 5px;
+    flex-shrink: 0;  
+    white-space: nowrap; 
+}
+@media (max-width: 768px) {
+  .leftContent,
+  .rightContent {
+      width: 150px;
+  }
+
+  .firstTitle,
+  .scores {
+      margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+      flex-direction: column;
+  }
+
+  .leftContent,
+  .rightContent {
+      width: 100%;
+  }
+
+  .firstTitle,
+  .leftTitle,
+  .scores {
+      margin-left: 10px;
+      text-align: center;
+  }
+
+  .progressBarContainer,
+  .legendList {
+      margin-top: 10px;
+  }
+
+  .leftTitle {
+      margin-top: 0;
+  }
+
+  .firstTitle {
+      order: 2;
+  }
+
+  .leftTitle {
+      order: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+}
+
+.leftContent,
+.rightContent {
+    width: 100%;
+}
+
+.firstTitle,
+.leftTitle,
+.scores {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.progressBarContainer,
+.legendList {
+    margin-top: 10px;
+}
+
+.leftTitle {
+    margin-top: 0;
+}
+
+.firstTitle {
+    order: 2;
+}
+
+.leftTitle {
+    order: 1;
+}
+}
+
+@media (max-width: 480px) {
+  .legendList {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+  }
+}
