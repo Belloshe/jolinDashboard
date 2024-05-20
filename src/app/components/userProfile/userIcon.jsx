@@ -8,7 +8,7 @@ const UserIcon = () => {
             <div className={styles.sidebar}>
                 <div className={styles.userProfile}>
                     <Image 
-                        src="/images/usericon.svg" 
+                        src="/images/userIcon.svg" 
                         alt="User Icon"
                         width={75}
                         height={74}
@@ -24,7 +24,7 @@ const UserIcon = () => {
                         <li>
                             <div>
                                 <Image 
-                                    src="/images/dashboard.svg"
+                                    src="/images/dashBoard.svg"
                                     alt="Dashboard Icon"
                                     width={20}
                                     height={20}
