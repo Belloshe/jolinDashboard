@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ScoreNavigator from '../inclusion/scoreNavigator';
-import WeeklyInclusion from '../weeklyinclusionscore/Weeklyinclusion';
+import WeeklyInclusion from '../weeklyinclusionscore/weeklyinclusion';
 import Difference from '../difference/difference';
 import Newhire from '../newhire/newhires';
 import styles from './allwrapper.module.css';
