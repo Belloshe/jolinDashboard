@@ -45,12 +45,12 @@
   .select {
     margin-right: 10px; 
     width: 118px;
-height: 27px;
-gap: 0px;
-border-radius: 5px 5px 5px 5px;
-border: 1px 1px 1px 1px;
-opacity: 0px;
+    height: 27px;
+    gap: 0px;
+    border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: white;
+    color: black;
 
   }
   
