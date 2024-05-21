@@ -69,3 +69,9 @@
         font-size: 12px; 
       }
     }
+    @media (min-width: 1025px) and (max-width: 1335px) {
+      .container {
+        width: 966px;
+      }
+    }
+    
