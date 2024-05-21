@@ -24,18 +24,15 @@
 }
 
 .select {
+    margin-right: 10px; 
     width: 118px;
     height: 27px;
     gap: 0px;
-    border-radius: 5px 5px 5px 5px;
-    border: 1px 1px 1px 1px;
-    opacity: 0px;
-  border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
     margin-bottom: 20px;
-}
-
-.innerWrapper {
-  
 }
 
 .progressBarWrapper {

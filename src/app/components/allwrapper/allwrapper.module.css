@@ -61,44 +61,39 @@
     flex-direction: column;
     gap: 10px;
   }
-  
-  
-  @media (max-width: 768px) {
-    .box {
-      flex-basis: 100%; 
-    }
-    
-    .scoreNavigator, .newhire {
-      margin-right: 0;
-    }
+  @media only screen and (max-width: 768px) {
+  .scoreNavigator,
+  .weeklyInclusion,
+  .newhire,
+  .difference {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
-  
-  @media (max-width: 480px) {
-    .wrapperContainer {
-      margin-top: 50px;
-      justify-content: center;
-    }
+
+  .horizontalContainer {
+    flex-direction: column;
   }
-  @media (max-width: 1024px) {
-    .horizontalContainer {
-      flex-direction: column;
-    }
-  
-    .trends, .risk, .oppts {
-      width: 100%; 
-      margin-bottom: 10px; 
-    }
+
+  .wrapperContainer {
+    margin-top: 20px;
   }
-  
-  @media (max-width: 768px) {
-    .horizontalContainer, .verticalStack {
-      flex-direction: column; 
-    }
+}
+
+@media only screen and (max-width: 480px) {
+  .box {
+    min-width: 100%;
   }
-  
-  @media (max-width: 480px) {
-    .trends, .risk, .oppts {
-      padding: 10px;
-    }
+}
+
+@media (max-width: 1335px) {
+  .box, .horizontalContainer {
+    min-width: 100%;
   }
-  
+  .horizontalContainer {
+    flex-direction: column;
+  }
+  .trends {
+    align-self: center; 
+  }
+}
