@@ -1,0 +1,147 @@
+.outerWrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.selectWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.select {
+    width: 118px;
+    height: 27px;
+    gap: 0px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px 1px 1px 1px;
+    opacity: 0px;
+        border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.innerWrapper {
+  
+}
+
+.progressBarWrapper {
+    margin-bottom: 20px;
+}
+
+.labelContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.labelTitle {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.infoIconWrapper {
+    margin-left: 10px;
+}
+
+.infoIcon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.tooltip {
+
+    position: absolute;
+    top: -100%;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100; 
+    }
+
+.infoIconWrapper:hover .tooltip {
+    display: block;
+    
+}
+
+.progressContainer {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.progress {
+    height: 100%;
+}
+
+.arrows{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem; 
+    }
+
+    .header, .selectWrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .select {
+        width: 100%; 
+    }
+    .tooltip {
+        top: 10px; 
+        left: 50%; 
+        transform: translate(-50%, 0);
+        padding: 5px; 
+        font-size: 2.5vw; 
+    }
+
+    .infoIconWrapper:hover .tooltip {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .outerWrapper {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .arrows {
+        right: 10px; 
+    }
+    .tooltip {
+        font-size: 4vw; 
+        max-width: 80%; 
+    }
+}
